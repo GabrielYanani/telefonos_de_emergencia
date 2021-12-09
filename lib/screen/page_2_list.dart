@@ -5,13 +5,6 @@ import 'package:flutter/material.dart';
 class page_2 extends StatelessWidget {
   page_2({Key key}) : super(key: key);
 
-  // final List personas = [
-  //   'david',
-  //   'iair',
-  //   'shlomo',
-  //   'rivka',
-  //   'rajel',
-  // ];
   List<Map> personas = [
     {
       'nombre': 'Ramon',
@@ -57,8 +50,9 @@ class page_2 extends StatelessWidget {
               child: ListView.builder(
                 itemCount: personas.length,
                 itemBuilder: (context, index) => Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(5.0),
                   child: ListTile(
+                    horizontalTitleGap: 30,
                     leading: Text(
                       personas[index]['servicio'],
                       style: TextStyle(

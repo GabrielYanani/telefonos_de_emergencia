@@ -8,15 +8,13 @@ class page_3 extends StatefulWidget {
 }
 
 class _page_3State extends State<page_3> {
- 
-
   List<Map> personas = [
     {
-      'servicio': 'policia',
+      'servicio': 'POLICIA',
       'contacto': 911,
     },
     {
-      'servicio': 'medicus',
+      'servicio': 'MEDICUS',
       'contacto': 080012321321,
     },
     {
@@ -27,7 +25,6 @@ class _page_3State extends State<page_3> {
       'servicio': 'HATZALA',
       'contacto': 50322626,
     },
-   
   ];
 
   @override
@@ -47,11 +44,15 @@ class _page_3State extends State<page_3> {
               child: ListView.builder(
                 itemCount: personas.length,
                 itemBuilder: (context, index) => Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(5.0),
                   child: ListTile(
+                    horizontalTitleGap: 10,
                     title: Text(personas[index]['servicio']),
                     subtitle: Text('${personas[index]['contacto']}'),
-                    trailing: const Icon(Icons.call,color: Colors.red,),
+                    trailing: const Icon(
+                      Icons.call,
+                      color: Colors.red,
+                    ),
                     tileColor: Colors.white,
                   ),
                 ),
@@ -63,5 +64,3 @@ class _page_3State extends State<page_3> {
     );
   }
 }
-
-  
