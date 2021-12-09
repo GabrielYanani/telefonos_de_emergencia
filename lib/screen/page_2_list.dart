@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 
-class page_2 extends StatelessWidget {
-  page_2({Key key}) : super(key: key);
+class page_2_list extends StatelessWidget {
+  page_2_list({Key key}) : super(key: key);
 
   List<Map> personas = [
     {

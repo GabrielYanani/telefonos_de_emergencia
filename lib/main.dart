@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/', // ruta inicial por defecto
       routes: {
         '/': (_) => page_1(),
-        '/page_2_list': (_) => page_2(),
+        '/page_2_list': (_) => page_2_list(),
         '/page_3':(_) => page_3(),
       },
     );
